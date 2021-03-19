@@ -1,0 +1,40 @@
+// Colors
+
+$purple-1: #dfd5ff;
+$purple-2: #7052c8;
+$purple-3: #6045af;
+$purple-4: #3f2787;
+$purple-5: #1d1647;
+
+$green-1: #65a300;
+
+$gray-0: #f2f2f3;
+$gray-1: #8b8b92;
+$gray-2: #72737a;
+$gray-3: #595a63;
+$gray-4: #454550;
+$gray-5: #2b2b2b;
+$gray-6: #070817;
+
+$red-1: #ff5144;
+
+// Function
+$c-primary: $purple-3;
+
+$c-primary-light1: $purple-1;
+$c-primary-light2: $purple-3;
+
+$c-primary-dark1: $purple-5;
+
+$c-text: $gray-4;
+$c-text-success: $green-1;
+
+$c-title-1: $c-primary-dark1;
+$c-title-2: $gray-6;
+
+// Helpers
+%wrapper {
+  max-width: 30em;
+  padding: 1rem;
+  margin: 0 auto;
+}

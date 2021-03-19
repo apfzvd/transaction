@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+
+.totalTitle {
+  font-size: 0.87rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.totalValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: $c-text-success;
+}
+
+.transaction {
+  border-bottom: 1px solid$gray-0;
+}
+
+.transactionContent {
+  @extend %wrapper;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 1rem;
+}
+
+%item {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.name {
+  @extend %item;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.status {
+  color: $gray-2;
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  text-align: right;
+}
+
+.date {
+  @extend %item;
+}
+
+.amount {
+  @extend %item;
+  font-weight: 700;
+  text-align: right;
+}
+
+.buttonWrapper {
+  @extend %wrapper;
+}
+
+.loaderWrap {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.error {
+  @extend %wrapper;
+  margin-top: 1rem;
+  text-align: center;
+  color: $gray-2;
+}

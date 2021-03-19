@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  background-color: $gray-5;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &.success {
+    background: $green-1;
+  }
+  &.danger {
+    background: $red-1;
+  }
+}
+
+.message {
+  line-height: 1.1rem;
+  min-width: 15rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}

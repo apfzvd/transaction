@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $c-title-2;
+}
+
+.back {
+  color: $c-primary;
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.form {
+  @extend %wrapper;
+}
+
+.formWrap {
+  padding: 5.5rem 0;
+}
+
+.rowCard {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  grid-column-gap: 1rem;
+}

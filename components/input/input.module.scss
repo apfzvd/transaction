@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border: 1px solid $gray-1;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 48px;
+  padding: 1.2rem 1rem 1rem;
+  color: $gray-3;
+  font-size: 1rem;
+
+  &:focus {
+    outline: 0;
+    border-color: $gray-3;
+  }
+
+  &.withError {
+    border-color: $red-1;
+  }
+
+  &.withError + label {
+    color: $red-1;
+  }
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
+  color: $gray-1;
+}
+
+.input:focus + label,
+.input.active + label {
+  transform: inherit;
+  top: -7px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #fff;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  color: $red-1;
+  z-index: 1;
+
+  i {
+    font-size: 1.2rem;
+  }
+
+  &:hover .errorMessage {
+    display: block;
+  }
+}
+
+.errorMessage {
+  display: none;
+  position: absolute;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  background: $red-1;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  top: 50%;
+  right: 1.5rem;
+  width: 150px;
+  transform: translateY(-50%);
+}
